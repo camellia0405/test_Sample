@@ -1,0 +1,383 @@
+body{
+  width: auto;
+  font-size: 96px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.jampButton{
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  font-size: 2rem;
+  z-index: 1;
+  text-shadow    :
+  2px  2px 1px #ffffff,
+  -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+  -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+  -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff;
+}
+
+.jampButton>a{
+  text-decoration-line: none;
+}
+
+/*トップ*/
+.top{
+  width: 100%;
+  position: relative;
+}
+
+.topBgImgBox{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top>img{
+  width: 100%;
+  height: 650px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 1500px 300px;
+  border-bottom-left-radius: 1500px 300px;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.topTextBox{
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  writing-mode: vertical-rl;
+}
+
+.toptext{
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow    :
+  2px  2px 1px #ffffff,
+  -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+  -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+  -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff;
+}
+
+.topImgBox{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 540px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.leftBox,.centerBox,.rightBox{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.centerBox{
+  padding-top: 2rem;
+}
+
+.leftBox>img, .centerBox>img, .rightBox>img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius:50%;
+  text-align: center;
+}
+
+.logoBox{
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.logoBox>img{
+  width: 100%;
+}
+
+.mainContentsTop{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(27,37,89);
+  padding: 1rem;
+}
+
+.mainContentsLeft{
+  width: 50%;
+  max-width: 5em;
+  margin-right: 1rem;
+}
+
+.mainContentsLeft>img{
+  width: 100%;
+  display: block;
+}
+
+.mainContentsRight{
+  width: 50%;
+  max-width: 5em;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(134, 105, 61);
+  padding: 0.5rem;
+}
+
+.messageUp{
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  background: url(../img/img_salt01.jpg) no-repeat center/cover;
+  padding: 1rem;
+}
+
+.messageUp>p{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+  text-shadow    :
+  2px  2px 1px #ffffff,
+  -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+  -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+  -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff;
+  margin-left: 1rem;
+}
+
+.messageDwn{
+  background-color: rgb(134, 105, 61);
+}
+
+.messageDwn>p{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 1.5rem;
+}
+
+.mainContentsPride{
+  width: 100%;
+  background: url(../img/bgimg_ine.jpg) no-repeat center/cover;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.transparent_sp>h1{
+  text-align: center;
+  font-size: 5rem;
+}
+
+.transparent{
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  padding-bottom: 8rem;
+}
+
+.text{
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.pMarginTop{
+  margin-top: 1rem;
+}
+
+.mainConttentsPrideImage{
+  width: 400px;
+  position: absolute;
+  bottom: -8rem;
+  right: 0;
+}
+
+.mainConttentsPrideImage>img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.mainContentsCampaign{
+  width: 100%;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+
+.campaignWrapper{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.campaignImg{
+  min-width: 40%;
+}
+
+.campaignImg>img{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.campaignBox{
+  width: 60%;
+  min-width: 600px;
+  min-height: 400px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: rgb(27,37,89);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.campaignTextBox{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+}
+
+.campaignText{
+  font-size: 2.3rem;
+}
+
+.textMarker{
+  background: linear-gradient(transparent 50%, #fbff0d 50%);
+}
+
+.textred{
+  color: rgb(187, 43, 43);
+}
+
+.textBox{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.xIcon{
+  width: 180px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
+footer{
+  width: 100%;
+  background-color: rgb(134, 105, 61);
+  color: #fff;
+  border-top: rgb(27,37,89) solid 18px;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.contact{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.contact>h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.formBox{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  font-size: 2rem;
+}
+
+.label{
+  display: table;
+}
+
+.form{
+  display: flex;
+  margin: 1rem;
+}
+
+label{
+  width: 300px;
+}
+
+.req::after{
+  content: "*";
+  color: rgb(187, 40, 40);
+}
+
+input,textarea{
+  width: 500px;
+  border-radius: 5px;
+}
+
+.addressBox{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.address{
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.footerMenuBox{
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+ul{
+  width: 600px;
+  display: flex;
+  justify-content: space-between
+  ;
+}
+
+.Copyright{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .topTextBox,.topImgBox{
+    display: none;
+  }
+  .mainContentsTop{
+    background-color: #fff;
+    display: block;
+  }
+  .mainContentsLeft,.mainContentsRight{
+    width: 100%;
+  }
+}
