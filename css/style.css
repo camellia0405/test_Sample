@@ -25,6 +25,11 @@ body{
   text-decoration-line: none;
 }
 
+.hamburger{
+  display: ;
+}
+
+
 /*トップ*/
 .top{
   width: 100%;
@@ -359,7 +364,104 @@ ul{
   font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {n 
+  .hamburger{
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    position: relative;
+  }
+  #overlay-button {
+    width: 90px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+  }
+  #overlay-button span {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: rgb(27,37,89);
+    position: relative;
+    display: block;
+    transition: all .2s ease-in-out;
+  }
+  #overlay-button span:before {
+    top: -10px;
+    visibility: visible;
+  }
+  #overlay-button span:after {
+    top: 10px;
+  }
+  #overlay-button span:before, #overlay-button span:after {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: rgb(27,37,89);
+    position: absolute;
+    content: "";
+    transition: all .2s ease-in-out;
+  }
+  #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+    background: rgb(27,37,89);
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ #overlay {
+    visibility: visible;
+  }
+  input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+    background: transparent;
+
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+  }
+
+  #overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #overlay ul li {
+    width: 100%;
+    padding: 1em;
+    border-bottom: rgb(27,37,89) solid 2px;
+  }
+  #overlay ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  #overlay ul li a:hover {
+    color: #000!important;
+  }
+
   body{
     font-size: 16px;
   }
